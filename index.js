@@ -18,8 +18,8 @@ app.get('/', function(req,res){
 })
 
 app.get('/webhook/', function(req,res){
-    if (req.query['hub.veryfy_token'] === "jovan_hn"){
-        res.send(req.query['hub.chalande'])
+    if (req.query['hub.verify_token'] === "jovan_hn"){
+        res.send(req.query['hub.challange'])
     }
     res.send("Wrong token")
 })
