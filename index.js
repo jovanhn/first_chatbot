@@ -18,5 +18,12 @@ app.get('/', function(req,res){
 })
 
 app.get('/webhook/', function(req,res){
-    if (req.query['hub.veryfy'])
+    if (req.query['hub.veryfy_token'] === "jovan_hn"){
+        res.send(req.query['hub.chalande'])
+    }
+    res.send("Wrong token")
+})
+
+app.listen(app.get('port'), function(){
+    console.log("running: port")
 })
