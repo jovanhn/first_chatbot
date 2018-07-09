@@ -1,7 +1,7 @@
 'use strict'
 
-const token = process.env.FB_PAGE_ACCESS_TOKEN
-const vtoken = process.env.FB_VERIFY_ACCESS_TOKEN
+const token = process.env.FB_ACCESS_TOKEN
+const vtoken = process.env.FB_VERIFY_TOKEN
 
 const express = require('express')
 const bodyParser = require('body-parser')
