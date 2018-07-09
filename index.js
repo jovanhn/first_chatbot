@@ -7,7 +7,7 @@ const request = require('request')
 const app = express()
 
 const token = process.env.FB_VERIFY_TOKEN
-const access = proces.env.FB_ACCESS_TOKEN
+const access = process.env.FB_ACCESS_TOKEN
 
 app.set('port', (process.env.PORT || 5000))
 
